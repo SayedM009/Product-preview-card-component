@@ -1,0 +1,159 @@
+:root {
+  --dark-cyan: hsl(158, 36%, 37%);
+  --cream: hsl(30, 38%, 92%);
+  --very-dark-blue: hsl(212, 21%, 14%);
+  --dark-grayish-blue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+  --fontSize: 0.9rem;
+}
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.montserrat500 {
+  font-weight: 500;
+}
+
+.montserrat700 {
+  font-weight: 700;
+}
+
+.fraunces {
+  font-family: "Fraunces", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "SOFT" 0, "WONK" 0;
+}
+
+.card {
+  overflow: hidden;
+  background-color: var(--white);
+  border-radius: 0.5rem;
+}
+
+.card .imgContainer {
+  height: 16rem;
+  background-image: url("../../assets/images/image-product-mobile.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card .imgContainer img {
+  display: none;
+}
+
+.card .infoContainer {
+  padding: 1.5rem 2rem;
+}
+
+.card .infoContainer .productType {
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  font-size: var(--fontSize);
+  color: var(--dark-grayish-blue);
+  font-weight: 500;
+  display: block;
+  margin: 0.5rem auto 0;
+}
+
+.card .infoContainer .productName {
+  font-weight: 700;
+  text-transform: capitalize;
+  font-family: "Fraunces", serif;
+  font-size: 2.4rem;
+  margin: 0.5rem auto;
+  color: var(--very-dark-blue);
+}
+
+.card .infoContainer .productDes {
+  color: var(--dark-grayish-blue);
+  line-height: 1.7;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.card .infoContainer .prices {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  margin-bottom: 0.7rem;
+}
+
+.card .infoContainer .prices .price {
+  color: var(--dark-cyan);
+  font-family: "Fraunces", serif;
+  font-size: 2.3rem;
+  font-weight: bolder;
+}
+
+.card .infoContainer .prices .discount {
+  font-size: var(--fontSize);
+  color: var(--dark-grayish-blue);
+  text-decoration: line-through;
+}
+
+.card .infoContainer button {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  outline: none;
+  border: none;
+  background-color: var(--dark-cyan);
+  color: var(--white);
+  font-weight: bold;
+  font-size: var(--fontSize);
+  cursor: pointer;
+}
+
+.card .infoContainer button svg {
+  font-size: 1.3rem;
+}
+
+.card .infoContainer button:hover {
+  background-color: var(--very-dark-blue);
+}
+
+@media (min-width: 768px) {
+  .card {
+    display: flex;
+    width: 50rem;
+  }
+  .card .imgContainer {
+    background-image: none !important;
+    flex-basis: 50%;
+  }
+
+  .card .imgContainer img {
+    display: block;
+    max-width: 100%;
+  }
+
+  .card .infoContainer {
+    flex-basis: 50%;
+    padding: 2.5rem auto;
+  }
+
+  .card .infoContainer .productName {
+    margin: 1rem 0;
+    width: 90%;
+  }
+  .card .infoContainer .productDes {
+    width: 90%;
+    font-size: 1.1rem;
+  }
+  .card .infoContainer .prices {
+    margin-bottom: 2rem;
+  }
+  .card .infoContainer button {
+    margin-bottom: 1rem;
+  }
+}
