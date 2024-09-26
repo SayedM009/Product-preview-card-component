@@ -126,6 +126,7 @@
   .card {
     display: flex;
     width: 50rem;
+    padding-bottom: 2rem;
   }
   .card .imgContainer {
     background-image: none !important;
@@ -145,15 +146,18 @@
   .card .infoContainer .productName {
     margin: 1rem 0;
     width: 90%;
+    line-height: 1.2;
   }
   .card .infoContainer .productDes {
     width: 90%;
     font-size: 1.1rem;
+    line-height: 1.8;
+    margin: 2rem 0;
   }
   .card .infoContainer .prices {
     margin-bottom: 2rem;
   }
   .card .infoContainer button {
-    margin-bottom: 1rem;
+    margin-bottom: 1ّrem;
   }
 }
